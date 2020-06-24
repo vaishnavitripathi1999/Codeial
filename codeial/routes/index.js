@@ -6,12 +6,15 @@ const express= require('express');
 const homecontroller = require('../controllers/home_controller');
 
 
+
 //calling router of express in a variable called router 
 const router = express.Router();
 
 
 //accessing the home from homecontroller
 router.get('/',homecontroller.home);
+
+router.use('/user',require('./users'));
 
 
 console.log('index from the router is loaded');
