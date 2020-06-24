@@ -16,6 +16,9 @@ router.get('/',homecontroller.home);
 
 router.use('/user',require('./users'));
 
+//for any other router we can use 
+//router.use('/name',require('./filename'))
+
 
 console.log('index from the router is loaded');
 
